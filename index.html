@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+ <!-- AOS Animation Library -->
+<link href="style.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1 class="logo">VISHWAA</h1>
+      <nav>
+  <ul class="nav-links">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="assets/Vishwaa-Resume.pdf" download class="nav-resume-btn">Resume</a></li>
+  </ul>
+  <div class="menu-toggle" id="menu-toggle">☰</div>
+      </nav>
+      <label class="switch">
+        <input type="checkbox" id="theme-toggle" />
+        <span class="slider"></span>
+      </label>
+    </div>
+  </header>
+  <section id="home" class="hero">
+    <div class="container">
+      <h2>Hello, I'm VISHWAA</h2>
+      <p>I'm a web developer passionate about creating beautiful and functional websites.</p>
+    </div>
+  </section>
+  <section id="about" class="section">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>I’m a developer skilled in HTML, CSS, JavaScript, and React. I love turning ideas into reality through code.</p>
+    </div>
+  </section>
+ <section id="projects" class="section">
+  <div class="container">
+    <h2>Projects</h2>
+    <div class="project-list">
+      <div class="project-card">
+        <h3>Learning Module Platform</h3>
+        <p>
+          A responsive web-based platform developed using HTML, CSS, and JavaScript that allows users to explore and complete interactive learning modules. Features include user progress tracking, quiz sections, and modular content layout.
+        </p>
+        <a href="https://yourusername.github.io/learning-module-platform" target="_blank" class="project-btn">View Project</a>
+      </div>
+      <div class="project-card">
+        <h3>Django Music Player</h3>
+        <p>
+          A full-featured music player web application built using Django. It allows users to upload, browse, and play music files with features like playlists, search, and audio control. Backend handles dynamic media storage and streaming.
+        </p>
+        <a href="https://github.com/Vishwaa-14/Django-Music-Player" target="_blank" class="project-btn">View Project</a>
+      </div>
+      <div class="project-card">
+        <h3>ShopEZ E-commerce System</h3>
+        <p>
+          A full-stack e-commerce web application developed using the MERN stack (MongoDB, Express.js, React, Node.js). It features product browsing, shopping cart, secure user authentication, and order management with a responsive UI.
+        </p>
+        <a href="https://github.com/Vishwaa-14/ShopEZ-E-commerce-System" target="_blank" class="project-btn">View Project</a>
+      </div>
+      <div class="project-card">
+        <h3>CloudChain: Hybrid Cloud Storage</h3>
+        <p>
+          A secure and scalable hybrid cloud storage application designed using a combination of on-premise and cloud-based infrastructure. Built with a focus on redundancy, encryption, and file-sharing across distributed environments.
+        </p>
+        <a href="https://github.com/Vishwaa-14/CloudChain-Hybrid-Cloud-Storage-Application" target="_blank" class="project-btn">View Project</a>
+      </div>
+    </div>
+  </div>
+<section id="contact">
+  <h2>Contact Me</h2>
+  <p>Feel free to reach out via this form or email me directly at <strong>vishwaa.cud@gmail.com</strong>.</p>
+  <form action=https://formspree.io/f/xdkzedqe method="POST">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="_replyto" placeholder="Your Email" required>
+    <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+  <div class="social-links">
+  <a href="https://github.com/Vishwaa-14" target="_blank">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" />
+  </a>
+  <a href=https://www.linkedin.com/in/vishwaa-p-788860325?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app target="_blank">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn" />
+  </a>
+  <a href="mailto:vishwaa.cud@gmail.com">
+    <img src="https://img.icons8.com/ios-filled/50/000000/email.png" alt="Email" />
+  </a>
+</div>
+  <div class="container">
+    <p>Thank you for visiting my portfolio! I look forward to connecting with you.</p>
+  </div>  
+  <a href="assets/Vishwaa-Resume.pdf" download class="resume-btn">Download Resume</a>
+</section>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000, once: true });
+
+    // Theme toggle
+    document.getElementById("theme-toggle").addEventListener("change", () => {
+      document.body.classList.toggle("dark-mode");
+    });
+
+    // Mobile menu toggle
+    document.getElementById("menu-toggle").addEventListener("click", () => {
+      document.getElementById("nav-links").classList.toggle("active");
+    });
+  </script>
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 VISHWAA. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
